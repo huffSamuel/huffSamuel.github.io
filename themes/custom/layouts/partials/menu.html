@@ -10,7 +10,9 @@ Renders a menu for the given menu ID.
 {{- $page := .page }}
 {{- $menuID := .menuID }}
 {{ $image := resources.Get "images/github-mark.png" }}
+{{ $image := $image.Resize "24x24" }}
 {{ $linkedinIcon := resources.Get "images/In-Blue-26.png" }}
+{{ $linkedinIcon := $linkedinIcon.Resize "24x24" }}
 
 
 {{- with index site.Menus $menuID }}
