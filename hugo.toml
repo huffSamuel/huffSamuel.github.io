@@ -1,6 +1,6 @@
 baseURL = 'https://example.org/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'Samuel Huff'
 theme = 'custom'
 [markup.goldmark.renderer]
 unsafe = true
