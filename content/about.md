@@ -1,5 +1,5 @@
 ---
-title: 'Contact Me'
+title: 'About'
 layout: staticpage
 resources:
   - src: about.css
