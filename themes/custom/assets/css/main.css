@@ -57,6 +57,12 @@ nav ul li a img {
 main {
   display: flex;
   flex-direction: column;
+  min-height: calc(100vh - 68px);
+}
+
+main.greeting {
+  display: flex;
+  flex-direction: column;
   justify-content: space-around;
   min-height: calc(100vh - 68px);
 }

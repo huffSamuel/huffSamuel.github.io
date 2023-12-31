@@ -1,11 +1,15 @@
 ---
 title: 'About'
 layout: staticpage
-resources:
-  - src: about.css
 ---
 
+<link rel="preconnect" href="https://cdn.jsdelivr.net/gh/devicons/devicon/icons">
+
 <style>
+    main {
+        justify-content: space-around;
+    }
+
     .skills {
         display: flex;
         flex-wrap: wrap;
