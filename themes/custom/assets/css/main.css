@@ -5,16 +5,15 @@ html * {
   padding: 0;
 }
 
-body {
-  display: block;
-  height: 100%;
-  width: 100%;
-  margin: 0px;
+html {
+  min-width: 340px;
 }
 
-body > * {
+body {
+  display: block;
   max-width: 65em;
   margin: 0 auto;
+  padding: 4px;
 }
 
 header {
@@ -26,14 +25,25 @@ header {
 
 nav {
   align-self: last baseline;
+  display: flex;
+  flex-direction: row;
+}
+
+@media only screen and (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  nav ul {
+    align-self: flex-end;
+  }
 }
 
 nav ul {
   margin: 0;
   padding: 0;
   list-style-type:  none;
-  display: table;
-  float: right;
 }
 
 nav ul li {
@@ -57,14 +67,13 @@ nav ul li a img {
 main {
   display: flex;
   flex-direction: column;
-  min-height: calc(100vh - 68px);
+  min-height: calc(100vh - 68px - 8px);
 }
 
 main.greeting {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  min-height: calc(100vh - 68px);
 }
 
 main.greeting h1 {

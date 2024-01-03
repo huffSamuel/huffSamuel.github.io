@@ -19,6 +19,8 @@ Renders a menu for the given menu ID.
   <nav>
     <ul>
       {{- partial "inline/menu/walk.html" (dict "page" $page "menuEntries" .) }}
+    </ul>
+    <ul>
       <li><a href="http://github.com/huffSamuel">
         {{ with $image }}
         <img src="{{ .RelPermalink}}" width="24" height="24" alt="Find me on GitHub"/>
