@@ -2,5 +2,7 @@ baseURL = 'https://example.org/'
 languageCode = 'en-us'
 title = 'Samuel Huff'
 theme = 'custom'
+enableRobotsTXT = true
 [markup.goldmark.renderer]
 unsafe = true
+[Taxonomies]

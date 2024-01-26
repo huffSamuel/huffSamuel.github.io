@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://www.samueljhuff.com/sitemap.xml
+Sitemap: https://samueljhuff.com/sitemap.xml
