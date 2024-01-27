@@ -59,6 +59,10 @@ nav ul li a {
   position: relative;
 }
 
+nav ul li a:hover {
+  text-shadow: -0.03ex 0 0 black, 0.03ex 0 0 black;
+}
+
 nav ul li a img {
   height: 24px;
   width: 24px;
