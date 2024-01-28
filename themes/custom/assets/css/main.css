@@ -5,15 +5,18 @@ html * {
   padding: 0;
 }
 
+nav ul.external img.dark {
+  display: none;
+}
+
 html {
   min-width: 340px;
 }
 
 body {
   display: block;
-  max-width: 65em;
-  margin: 0 auto;
-  padding: 4px;
+  width: min(65em, 100% - 2em);
+  margin-inline: auto;
 }
 
 header {
@@ -43,7 +46,7 @@ nav {
 nav ul {
   margin: 0;
   padding: 0;
-  list-style-type:  none;
+  list-style-type: none;
 }
 
 nav ul li {
@@ -83,4 +86,36 @@ main.greeting {
 main.greeting h1 {
   font-weight: 600;
   padding-bottom: 1.5rem;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  img {
+    scale: 0.8;
+    opacity: 0;
+    animation: fade-in linear forwards;
+    animation-timeline: view();
+    animation-range: entry;
+  }
+}
+
+@keyframes fade-in {
+  to {
+    scale: 1;
+    opacity: 1;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  html * {
+    color: white;
+    background: #2c292d;
+  }
+
+  nav ul.external img.light {
+    display: none;
+  }
+
+  nav ul.external img.dark {
+    display: block;
+  }
 }

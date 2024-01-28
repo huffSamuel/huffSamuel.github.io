@@ -18,6 +18,8 @@ layout: staticpage
         padding-top: 2em;
     }
 
+    
+
     ul.projects li {
         border: 1px solid oklch(35.91% 0 241);
         border-radius: 8px;
@@ -27,6 +29,12 @@ layout: staticpage
         gap: 12px;
 
         box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    }
+
+    @media (prefers-color-scheme: dark) {
+        ul.projects li {
+            box-shadow: none;
+        }
     }
 
     ul.projects li a {

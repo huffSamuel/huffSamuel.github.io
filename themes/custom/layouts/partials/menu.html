@@ -11,8 +11,12 @@ Renders a menu for the given menu ID.
 {{- $menuID := .menuID }}
 {{ $image := resources.Get "images/github-mark.png" }}
 {{ $image := $image.Resize "24x24" }}
-{{ $linkedinIcon := resources.Get "images/In-Blue-26.png" }}
+{{ $githubDark := resources.Get "images/github-mark-white.png" }}
+{{ $githubDark := $githubDark.Resize "24x24" }}
+{{ $linkedinIcon := resources.Get "images/in-blue.png" }}
 {{ $linkedinIcon := $linkedinIcon.Resize "24x24" }}
+{{ $linkedinDark := resources.Get "images/in-white.png" }}
+{{ $linkedinDark := $linkedinDark.Resize "24x24" }}
 
 
 {{- with index site.Menus $menuID }}
@@ -20,15 +24,21 @@ Renders a menu for the given menu ID.
     <ul>
       {{- partial "inline/menu/walk.html" (dict "page" $page "menuEntries" .) }}
     </ul>
-    <ul>
+    <ul class="external">
       <li><a href="http://github.com/huffSamuel">
         {{ with $image }}
-        <img src="{{ .RelPermalink}}" width="24" height="24" alt="Find me on GitHub"/>
+        <img class="light" src="{{ .RelPermalink}}" width="24" height="24" alt="Find me on GitHub"/>
         {{end}}
+        {{ with $githubDark }}
+        <img class="dark" src="{{ .RelPermalink}}" width="24" height="24" alt="Find me on GitHub"/>
+        {{ end }}
       </a></li>
       <li><a href="http://github.com/huffSamuel">
         {{ with $linkedinIcon }}
-        <img src="{{ .RelPermalink}}" width="24" height="24" alt="Find me on LinkedIn"/>
+        <img class="light" src="{{ .RelPermalink}}" width="24" height="24" alt="Find me on LinkedIn"/>
+        {{end}}
+        {{ with $linkedinDark }}
+        <img class="dark" src="{{ .RelPermalink}}" width="24" height="24" alt="Find me on LinkedIn"/>
         {{end}}
       </a></li>
     </ul>
