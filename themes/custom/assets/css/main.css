@@ -118,4 +118,9 @@ main.greeting h1 {
   nav ul.external img.dark {
     display: block;
   }
+
+  nav ul li a:hover {
+    text-shadow: -0.03ex 0 0 white, 0.03ex 0 0 white;
+  }
+  
 }
