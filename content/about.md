@@ -216,7 +216,7 @@ What I Know
 <img
     alt="Jasmine"
     title="Jasmine"
-    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jasmine/jasmine-plain.svg"
+    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jasmine/jasmine-original.svg"
 />
 
 <img
