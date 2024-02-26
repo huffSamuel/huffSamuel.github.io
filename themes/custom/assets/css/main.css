@@ -298,9 +298,9 @@ html {
   min-width: 340px;
 }
 
-header> *,
-footer> *,
-main> * {
+header > *,
+footer > *,
+main > * {
   width: 80vw;
   max-width: 70rem;
   margin-left: auto;
@@ -461,11 +461,15 @@ section:nth-child(0) {
 
   /* TODO: Work diagonals into the design for content breaks */
   /* clip-path: polygon(0 24px,100% 0,100% calc(100% - 24px),0 100%); */
+}
 
-  &:after {
-    content: '';
-    background-color: var(--primary-100);
-    transform: rotate(8deg);
+@media (prefers-color-scheme: dark) {
+  .banner-section.cta {
+    background: linear-gradient(
+      23.45deg,
+      var(--secondary-50) 30%,
+      var(--primary-800) 100%
+    );
   }
 }
 
@@ -675,8 +679,8 @@ a {
 
       background: linear-gradient(
         246deg,
-        var(--primary-600) 0%,
-        var(--secondary-600) 100%
+        var(--primary-700) 0%,
+        var(--secondary-700) 100%
       );
     }
   }
@@ -698,6 +702,13 @@ a {
 @media (prefers-color-scheme: dark) {
   a.button-text:hover {
     color: var(--primary-700);
+  }
+
+  a.button-gradient-primary-secondary:hover {
+    color: var(--text-900);
+    background-clip: none;
+    -webkit-text-fill-color: var(--text-900);
+
   }
 }
 
