@@ -14,7 +14,7 @@ layout: staticpage
             </p>
             <br />
             <p>
-            Outside of work you can usually find me spending time with my beautiful family. We like to pretend we're homesteading our property so we are commonly found out in the garden, tending to our chickens, or just spending time outdoors in central Oregon.
+            When I'm not at work I'm usually found spending time with my amazing family or out in the garage working on our cars. When you have a career in front of a screen it can be nice to disconnect and work on something in the physical world. 
             </p>
         </div>
     </section>
