@@ -1,13 +1,32 @@
 {{ define "main" }}
-<h1>{{ .Title }}</h1>
-{{ .Content }} {{ range .Pages }}
-<a class="card pad-bottom-1em" href="{{ .RelPermalink }}">
-  <div class="pad-bottom-1em">
-    <h2>{{ .LinkTitle }}</h2>
-    {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }} {{
-    $dateHuman := .Date | time.Format ":date_long" }}
-    <time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
-  </div>
-  {{ .Summary }}
-</a>
-{{ end }}{{ end }}
+
+<div class="projects">
+  <section class="banner-section">
+    <div class="content-block">
+      <div class="content-block-title">
+        <h1>{{ .Title }}</h1>
+      </div>
+    </div>
+  </section>
+
+  <section class="banner-section">
+    <div class="cards-section">
+      {{ range $index, $element := .Pages }}
+
+      <a class="section-card" href="{{ .RelPermalink }}">
+        <h3>{{ .LinkTitle }}</h3>
+        <p>{{ .Summary }}</p>
+
+        <div class="chips">
+          {{ range .Params.technology }}
+          <span>
+            <p class="chip">{{ . }}</p>
+          </span>
+          {{ end }}
+        </div>
+      </a>
+      {{ end }}
+    </div>
+  </section>
+</div>
+{{ end }}

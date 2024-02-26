@@ -1,6 +1,6 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://www.samueljhuff.com'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'UPnP Explorer'
 
 [[menus.main]]
 name = 'home'
@@ -16,12 +16,6 @@ weight = 20
 name = 'projects'
 pageRef = '/projects'
 weight = 30
-
-[[menus.main]]
-name = 'posts'
-pageRef = '/posts'
-weight = 40
-
 
 [module]
   [module.hugoVersion]

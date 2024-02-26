@@ -1,1 +1,28 @@
-<p>Copyright {{ now.Year }}. All rights reserved.</p>
+{{ $image := resources.Get "images/github-mark.png" }} {{ $image :=
+$image.Resize "24x24" }} {{ $githubDark := resources.Get
+"images/github-mark-white.png" }} {{ $githubDark := $githubDark.Resize "24x24"
+}} {{ $linkedinIcon := resources.Get "images/in-blue.png" }} {{ $linkedinIcon :=
+$linkedinIcon.Resize "24x24" }} {{ $linkedinDark := resources.Get
+"images/in-white.png" }} {{ $linkedinDark := $linkedinDark.Resize "24x24" }}
+
+<div>
+    {{/*  <a class="contact" href="/contact-me">Contact me</a>  */}}
+    <div class="socials">
+      <div class="category">
+        <span class="header">Let's Connect</span>
+        <ul class="external">
+          <li><a href="http://github.com/huffSamuel"> GitHub </a></li>
+          <li>
+            <a href="https://www.linkedin.com/in/sam-writes-software/">
+              LinkedIn
+            </a>
+          </li>
+          <li><a href="https://stackoverflow.com/users/6425808/samuel-huff">Stack Overflow</a></li>
+        </ul>
+      </div>
+    </div>
+    
+</div>
+
+
+<p class="copyright">Copyright {{ now.Year }}. All rights reserved.</p>
