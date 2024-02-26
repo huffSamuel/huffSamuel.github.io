@@ -102,8 +102,10 @@ textarea:not([rows]) {
 
 /* #region THEME */
 
-@media (prefers-color-scheme: light) {
   :root {
+    --content-width: 80vw;
+    --content-max-width: 70rem;
+
     --linearPrimarySecondary: linear-gradient(
       246deg,
       var(--primary-600) 0%,
@@ -177,7 +179,7 @@ textarea:not([rows]) {
     --accent-900: #102223;
     --accent-950: #081111;
   }
-}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --linearPrimarySecondary: linear-gradient(
@@ -301,8 +303,8 @@ html {
 header > *,
 footer > *,
 main > * {
-  width: 80vw;
-  max-width: 70rem;
+  width: var(--content-width);
+  max-width: var(--content-max-width);
   margin-left: auto;
   margin-right: auto;
 }
@@ -636,6 +638,11 @@ section:nth-child(0) {
 }
 
 @media screen and (max-width: 800px) {
+  :root {
+    --content-width: 90vw;
+    --content-max-width: 70rem;
+  }
+
   .cards-section {
     flex-direction: column;
     gap: 1.5em;
