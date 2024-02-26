@@ -427,12 +427,12 @@ section:nth-child(0) {
   display: grid;
   gap: 2rem;
   align-items: center;
+}
 
-  .content-block-title {
-    h1 {
-      font-size: 2rem;
-      font-weight: 600;
-    }
+.content-block-title {
+  h1 {
+    font-size: 2rem;
+    font-weight: 600;
   }
 }
 
@@ -446,6 +446,7 @@ section:nth-child(0) {
   padding-top: 24px;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   gap: 12px;
 
   .chip {
@@ -500,7 +501,7 @@ section:nth-child(0) {
   .with {
     display: flex;
     flex-direction: row;
-    gap: 12px;  
+    gap: 12px;
 
     .chip {
       border-radius: 14px;
@@ -557,7 +558,7 @@ section:nth-child(0) {
     background-color: var(--background-50);
     border: 1px solid var(--background-200);
     border-radius: 16px;
-    padding: 2em;
+    padding: 1.25em 2em;
     align-items: center;
 
     h2 {
