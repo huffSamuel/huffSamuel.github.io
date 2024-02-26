@@ -3,33 +3,6 @@ title: 'About'
 layout: staticpage
 ---
 
-<link rel="preconnect" href="https://cdn.jsdelivr.net/gh/devicons/devicon/icons">
-
-<style>
-
-    .skills {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 1em;
-    }
-
-    .skills img {
-        height: 2em;
-        width: 2em;
-    }
-
-    @media only screen and (max-width: 600px) {
-        div.content {
-            flex-direction: column;
-            align-items: center;
-        }
-
-        div.content > div {
-            width: 100%;
-        }
-    }
-</style>
-
 <div class="about">
     <section class="banner-section">
         <div class="content-block">

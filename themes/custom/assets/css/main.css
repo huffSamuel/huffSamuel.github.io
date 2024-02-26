@@ -485,10 +485,6 @@ section:nth-child(0) {
     &:hover {
       text-decoration: underline;
     }
-    
-    &:after {
-      content: url('/assets/images/external-link.svg')
-    }
   }
 
   .when {
@@ -563,7 +559,7 @@ section:nth-child(0) {
     padding: 2em;
     align-items: center;
 
-    h3 {
+    h2 {
       font-size: 1.25rem;
       font-weight: 600;
       letter-spacing: 0.5px;
@@ -653,7 +649,7 @@ footer {
 
   .copyright {
     font-size: 0.8em;
-    color: var(--text-400);
+    color: var(--text-600);
   }
 
   .content-wrapper {

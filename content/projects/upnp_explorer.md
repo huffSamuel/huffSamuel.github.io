@@ -30,19 +30,19 @@ technology:
 <section class="banner-section">
     <div class="cards-section">
     <div class="section-card">
-        <h3>Modern UI</h3>
+        <h2>Modern UI</h2>
         <p>
             Built with Material Design 3 for an intuitive user experience.
         </p>
     </div>
     <div class="section-card">
-        <h3>Open Source</h3>
+        <h2>Open Source</h2>
         <p>
             Open source and zero cost, forever.
         </p>
     </div>
     <div class="section-card">
-        <h3>Ad Free</h3>
+        <h2>Ad Free</h2>
         <p>
             No distracting ads.
         </p>
