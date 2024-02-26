@@ -275,6 +275,12 @@ a {
 
 html {
   background-color: var(--background);
+  background: linear-gradient(
+    -23.45deg,
+    var(--background) 0%,
+    var(--background) 60%,
+    var(--secondary-50) 100%
+  );
   color: var(--text);
 }
 
@@ -292,11 +298,20 @@ html {
   min-width: 340px;
 }
 
-.content-wrapper {
+header> *,
+footer> *,
+main> * {
+  width: 80vw;
+  max-width: 70rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* .content-wrapper {
   width: min(65em, 100% - 2em);
   margin-inline: auto;
   padding: 0px 8px;
-}
+} */
 
 header .content-wrapper {
   display: flex;
@@ -427,6 +442,50 @@ section:nth-child(0) {
   display: grid;
   gap: 2rem;
   align-items: center;
+}
+
+.banner-section.cta {
+  padding-top: 125px;
+  padding-bottom: 125px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  justify-content: center;
+  margin-bottom: 125px;
+
+  background: linear-gradient(
+    23.45deg,
+    var(--secondary-100) 0%,
+    var(--primary-100) 100%
+  );
+
+  /* TODO: Work diagonals into the design for content breaks */
+  /* clip-path: polygon(0 24px,100% 0,100% calc(100% - 24px),0 100%); */
+
+  &:after {
+    content: '';
+    background-color: var(--primary-100);
+    transform: rotate(8deg);
+  }
+}
+
+#resume {
+  margin-bottom: 96px;
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+}
+
+.content-block-center {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
+  text-align: center;
+
+  a {
+    align-self: center !important;
+  }
 }
 
 .content-block-title {
@@ -623,7 +682,6 @@ a {
   }
 
   &[class*='button'] {
-    align-self: start;
     transition: all 0.1s ease-in-out;
     position: relative;
 

@@ -11,7 +11,7 @@
       <div class="content-wrapper">{{ partial "header.html" . }}</div>
     </header>
     <main>
-      <div class="content-wrapper">{{ block "main" . }}{{ end }}</div>
+      {{ block "main" . }}{{ end }}
     </main>
     <footer>
       <div class="content-wrapper">{{ partial "footer.html" . }}</div>

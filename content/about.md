@@ -52,4 +52,12 @@ layout: staticpage
             </div>
         </div>
     </section>
+    
 </div>
+
+<section id="resume" class="banner-section cta">
+        <div class="content-block-center">
+        <h3>Need to know more? Here's my resume.</h3>
+        <a class="button-gradient-primary-secondary" download href="/docs/resume.pdf">Download</a>
+        </div>
+    </section>
