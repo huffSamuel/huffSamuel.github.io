@@ -1,6 +1,6 @@
 baseURL = 'https://example.org/'
 languageCode = 'en-us'
-title = 'Samuel Huff'
+title = 'Samuel Huff | Software Engineer'
 theme = 'custom'
 enableRobotsTXT = true
 [markup.goldmark.renderer]
