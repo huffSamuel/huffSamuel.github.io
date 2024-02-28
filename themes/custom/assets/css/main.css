@@ -206,7 +206,7 @@ a {
 html {
   background-color: var(--background);
   background: linear-gradient(
-    -23.45deg,
+    315deg,
     var(--background) 0%,
     var(--background) 60%,
     var(--secondary-50) 100%
@@ -359,10 +359,6 @@ section:nth-child(0) {
   display: grid;
   gap: 2rem;
   align-items: center;
-}
-
-#resume {
-  margin-bottom: 96px;
 }
 
 .cta {
@@ -795,7 +791,6 @@ footer {
   flex-direction: column;
   gap: 12px;
   justify-content: center;
-  margin-bottom: 125px;
   width: 100%;
   max-width: 100%;
 
