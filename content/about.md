@@ -23,7 +23,17 @@ layout: staticpage
             <h2 id="cv">Work Experience</h2>
             <div>
                 <div class="cv-entry">
-                    <p class="when">2020 - Present</p>
+                    <p class="when">2024 - Present</p>
+                    <div class="details">
+                        <a class="where" href="https://www.ayahealthcare.com">Software Engineer 3 @ Aya Healthcare</a>
+                        <div class="with">
+                            <p class="chip">Angular</p>
+                            <p class="chip">ASP.NET</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cv-entry">
+                    <p class="when">2020 - 2024</p>
                     <div class="details">
                         <a class="where" href="https://www.nvenergy.com">Senior Software Engineer @ NV Energy</a>
                         <p class="what">Led a team of 6 engineers to develop our customer portal and mobile application. Collaborated with the project stakeholders to design user experiences, manage timelines, and prioritize objectives.</p>
@@ -51,7 +61,18 @@ layout: staticpage
         </div>
     </div>
 </section>
-    
+
+<section id="education">
+    <div class="content-block">
+        <h2>Education</h2>
+        <div class="cv-entry">
+            <p class="when">2011 - 2016</p>
+            <div class="details">
+            <a class="where" href="https://www.oit.edu">Bachelors of Software Engineering Technologies @ OIT</a>
+            </div>
+            </div>
+</section>
+
 <section id="resume" class="banner-section cta">
         <div class="content-block-center">
         <h3>Need to know more? Here's my resume.</h3>
