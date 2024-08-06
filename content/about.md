@@ -62,15 +62,18 @@ layout: staticpage
     </div>
 </section>
 
-<section id="education">
+<section id="education" class="banner-section">
     <div class="content-block">
-        <h2>Education</h2>
+    <div class="content-block-title">
+            <h2>Education</h2>
+    </div>
         <div class="cv-entry">
             <p class="when">2011 - 2016</p>
             <div class="details">
             <a class="where" href="https://www.oit.edu">Bachelors of Software Engineering Technologies @ OIT</a>
             </div>
             </div>
+
 </section>
 
 <section id="resume" class="banner-section cta">
