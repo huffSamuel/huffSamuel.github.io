@@ -135,8 +135,8 @@ textarea:not([rows]) {
   --text-900: #1a1919;
   --text-950: #0d0c0c;
 
-  --background: #f8f7f6;
-  --background-50: #f4f2f1;
+  --background: #f8f8f8;
+  --background-50: #f8f8f8;
   --background-100: #e9e6e2;
   --background-200: #d2ccc6;
   --background-300: #bcb3a9;
@@ -471,15 +471,15 @@ section:nth-child(0) {
   gap: 1rem;
 
   a.section-card {
+    &:hover {
+      border: 1px solid var(--background-400);
+    }
+
     time {
       padding-bottom: 18px;
       font-weight: 200;
       color: var(--text-600);
       letter-spacing: -0.5px;
-    }
-
-    &:hover {
-      outline: 2px solid black;
     }
   }
 
@@ -499,7 +499,7 @@ section:nth-child(0) {
       letter-spacing: 0.5px;
       padding-top: 0px;
       padding-bottom: 18px;
-      color: var(--text-700);
+      color: var(--text-800);
     }
   }
 }
@@ -797,3 +797,29 @@ footer {
   /* TODO: Work diagonals into the design for content breaks */
   /* clip-path: polygon(0 24px,100% 0,100% calc(100% - 24px),0 100%); */
 }
+
+.highlighted-text * em {
+  background-image: linear-gradient(to right, blue 0, blue 100%);
+  background-size: 100% 28%;
+  background-repeat: no-repeat;
+  background-position: left 90%;
+  transition: background-size .9s cubic-bezier(.15,.75,.4,1),opacity .25s ease
+}
+
+.gradient-highlighted-text * em {
+  background-image: linear-gradient(
+    246deg,
+    var(--primary-300) 0%,
+    var(--secondary-300) 100%
+  );
+  background-size: 100% 28%;
+  background-repeat: no-repeat;
+  background-position: left 90%;
+  transition: background-size .2s ease-in-out;
+  font-style: inherit;
+}
+
+/* For a highlighted link */
+/* .gradient-highlighted-text * em {
+  background-size: 100% 100%;
+} */
