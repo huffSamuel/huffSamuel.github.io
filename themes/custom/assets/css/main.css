@@ -250,10 +250,15 @@ main > * {
   padding: 0px 8px;
 } */
 
+header {
+  background-color: var(--background);
+  border-bottom: 1px solid var(--text-200);
+}
+
 header .content-wrapper {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-end;
   min-height: 68px;
 }
 
@@ -273,22 +278,6 @@ nav ul li {
   display: inline-block;
   position: relative;
   padding-left: 1.5rem;
-}
-
-nav ul li a {
-  text-decoration: none;
-  font-size: 1.25rem;
-  display: inline-block;
-  position: relative;
-}
-
-nav ul li a:hover {
-  text-shadow: -0.03ex 0 0 black, 0.03ex 0 0 black;
-}
-
-nav ul li a img {
-  height: 24px;
-  width: 24px;
 }
 
 main {
@@ -581,11 +570,12 @@ a {
 footer {
   border-top: 1px solid var(--text-200);
   padding-top: 24px;
-  background-color: var(--text-50);
+  background-color: var(--background);
 
   .copyright {
     font-size: 0.8em;
     color: var(--text-600);
+    font-weight: 200;
   }
 
   .content-wrapper {
@@ -601,42 +591,12 @@ footer {
       justify-content: space-between;
       flex-wrap: wrap;
 
-      .contact {
-        align-self: start;
-        transition: all 0.1s ease-in-out;
-        position: relative;
-
-        padding: 1em 2em;
-        border-radius: 2px;
-        background: linear-gradient(
-          246deg,
-          var(--primary-600) 0%,
-          var(--secondary-600) 100%
-        );
-        background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-
-        font-weight: 700;
-        text-decoration: none;
-        letter-spacing: -1px;
-        text-transform: uppercase;
-
-        border: 2px solid var(--secondary-600);
-
-        &:hover {
-          color: var(--text-50);
-          background-clip: none;
-          -webkit-text-fill-color: var(--text-50);
-          background: linear-gradient(
-            246deg,
-            var(--primary-600) 0%,
-            var(--secondary-600) 100%
-          );
-        }
-      }
-
       .category {
+        figcaption {
+          color: var(--text-600);
+          font-weight: 600;
+          text-transform: uppercase;
+        }
         ul {
           list-style: none;
 
@@ -646,17 +606,12 @@ footer {
           a {
             text-decoration: none;
             font-weight: 300;
+            color: var(--text-600);
 
             &:hover {
-              color: var(--text-500);
+              color: var(--text-700);
             }
           }
-        }
-
-        .header {
-          color: var(--text-600);
-          font-weight: 600;
-          text-transform: uppercase;
         }
       }
     }
@@ -803,7 +758,8 @@ footer {
   background-size: 100% 28%;
   background-repeat: no-repeat;
   background-position: left 90%;
-  transition: background-size .9s cubic-bezier(.15,.75,.4,1),opacity .25s ease
+  transition: background-size 0.9s cubic-bezier(0.15, 0.75, 0.4, 1),
+    opacity 0.25s ease;
 }
 
 .gradient-highlighted-text * em {
@@ -815,7 +771,7 @@ footer {
   background-size: 100% 28%;
   background-repeat: no-repeat;
   background-position: left 90%;
-  transition: background-size .2s ease-in-out;
+  transition: background-size 0.2s ease-in-out;
   font-style: inherit;
 }
 
@@ -823,3 +779,46 @@ footer {
 /* .gradient-highlighted-text * em {
   background-size: 100% 100%;
 } */
+
+.animated {
+  transition: background-size 0.9s cubic-bezier(0.15, 0.75, 0.4, 1),
+    opacity 0.25s ease;
+}
+
+@media (prefers-reduced-motion) {
+  .animated {
+    transition: none;
+  }
+}
+
+.highlighted-link {
+  background-image: linear-gradient(
+    to right,
+    var(--primary-300) 0,
+    var(--primary-300) 100%
+  );
+  background-repeat: no-repeat;
+  background-position: left 90%;
+  background-size: 0% 20%;
+}
+
+.highlighted-link:hover {
+  background-size: 100% 20%;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-size: 1.25rem;
+  display: inline-block;
+  position: relative;
+}
+
+nav ul li a:hover {
+  text-shadow: -0.03ex 0 0 black, 0.03ex 0 0 black;
+}
+
+nav ul li a.active {
+  background-size: 100% 20%;
+
+  /* border-bottom: 1px solid var(--primary-400); */
+}
