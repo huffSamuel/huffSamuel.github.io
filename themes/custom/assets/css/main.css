@@ -523,8 +523,8 @@ a {
     border: 2px solid var(--text);
 
     &:hover {
-      color: var(--primary-300);
-      background-color: var(--text);
+      border-color: var(--primary-600);
+      color: var(--primary-600);
     }
   }
 
@@ -794,8 +794,8 @@ footer {
 .highlighted-link {
   background-image: linear-gradient(
     to right,
-    var(--primary-300) 0,
-    var(--primary-300) 100%
+    var(--primary-100) 0,
+    var(--primary-100) 100%
   );
   background-repeat: no-repeat;
   background-position: left 90%;
@@ -818,7 +818,15 @@ nav ul li a:hover {
 }
 
 nav ul li a.active {
-  background-size: 100% 20%;
+  text-shadow: -0.03ex 0 0 black, 0.03ex 0 0 black;
+}
 
-  /* border-bottom: 1px solid var(--primary-400); */
+.content-block-action {
+  a {
+    color: var(--accent-500);
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }

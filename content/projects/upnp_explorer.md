@@ -20,7 +20,7 @@ technology:
         Powered by the UPnP protocol, UPnP Explorer discovers devices on your network and provides you with a power tool for controlling them.
         </p>
         <div class="content-block-action">
-            <a class="button-text" href="https://github.com/huffSamuel/upnp_explorer/tree/main">GitHub</a>
+            <a href="https://github.com/huffSamuel/upnp_explorer/tree/main">Repository</a>
         </div>
     </div>
     <div class="image-block">

@@ -9,7 +9,7 @@ layout: staticpage
             <h1>About Me</h1>
         </div>
         <p>
-        I am a full-stack software engineer building systems that benefit businesses and their customers. Check out some of my personal work in <strong><a href="/projects">projects</a></strong> or scroll down to see my <strong><a href="#cv">CV</a></strong>.
+        I am a full-stack software engineer building systems that benefit businesses and their customers. My passion is designing and building software to handle the rote work so everyone can focus on more engaging tasks. Check out some of my personal work in <strong><a href="/projects">projects</a></strong> or scroll down to see my <strong><a href="#cv">work history</a></strong>.
         </p>
         <br />
         <p>
@@ -78,7 +78,7 @@ layout: staticpage
 
 <section id="resume" class="banner-section cta">
         <div class="content-block-center">
-        <h3>Need to know more? Here's my resume.</h3>
+        <h3>Want to know more? Here's my resume.</h3>
         <a class="button-gradient-primary-secondary" download href="/docs/resume.pdf">Download</a>
         </div>
     </section>

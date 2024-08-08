@@ -20,7 +20,7 @@ technology:
         APIgen generates the source code required to plug an API directly into your codebase.
         </p>
         <div class="content-block-action">
-            <a class="button-text" href="https://github.com/huffSamuel/apigen/tree/main">GitHub</a>
+            <a href="https://github.com/huffSamuel/apigen/tree/main">Repository</a>
         </div>
     </div>
     <div class="image-block">
